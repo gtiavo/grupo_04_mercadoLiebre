@@ -6,6 +6,8 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./view/index.html"));
 });
 
-app.listen(3000, () => {
-  console.log("Server is running on PORT : 3000");
+const port= process.env.PORT || 3000
+
+app.listen(port, () => {
+  console.log(`Server is running on PORT : ${port}`);
 });
