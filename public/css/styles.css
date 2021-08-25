@@ -1,4 +1,6 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -6,36 +8,57 @@ header{
     background-color: #EAC926;
     font-family:sans-serif ;
     font-size:12px ;
-    width: 90vw;
+  
     margin: auto;
+    padding:20px;
+    
+   
 }
 
 h2{
-    font-size: 40px;
+    font-size: 30px;
+    padding: 10px;
 }
+.navBar ul{
+list-style: none;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+.navBar{
+    display: none
+}
+
 .precios{
     font-size: 18px;
     font-weight: bold;
     text-align: left;
     margin-left: 20px;
+    flex-grow: 0.30
 }
 .descuentos{
     font-size: 16px;
     color:green ;
     text-align: left;
     margin-left: 20px;
+    flex-grow: 0.70
 }
 h4{
     font-family: sans-serif;
-    font-size: 16px;
-    text-align: left;
-    margin-left: 20px;
+    font-size: 15px;
+    margin-left:auto;
+    padding: 10px;
 }
 
 .centrado{
-    margin: auto;
-   margin-top: 100px;
+    font-weight: 40px;
    text-align: center;
+   display: inline-block;
 
 }
 
@@ -46,7 +69,7 @@ h4{
 }
 
 i{
-    font-size: 2em;
+    font-size: 25px;
     line-height: 10px;
 }
 
@@ -54,68 +77,321 @@ i{
     font-size: 20px;
 }
 .caja1{
-    width: 300px;
+    width: 250px;
     background-color: white;
     margin: 15px;
+    display: inline-block;
 }
 .cajaBurger{
-    width: 50px;
-    height: 50px;
+    max-width: 40px;
     background-color:blue;
     margin: auto ;
-    
-}
-.burguer{
+    display: block;
+    padding: 15px 0;
+    border-radius: 8px;
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
+    text-decoration: none
 }
+
 
 .centradoMain{
     margin: auto;
-    width: 90vw;
     background-color:#D3D3D3;
-    text-align: center;
+    text-align: center; 
 }
+
+
+/* ACA VA EL MAIN DEL REGISTRO, FORMULARIOS*/
+
+.registerMain{
+    background-color:#D3D3D3;
+}
+
+.formularioRegistro input{
+    
+    height:25px;
+    padding: 10px;
+    
+  
+}
+.formularioRegistro label{
+    display: block;
+    padding: 10px;
+}
+
+.selectores input{
+    position: relative;
+    top: 8px;
+    text-align: left;
+}
+
+.registroAjustes input{
+    width: 70%;
+    padding: 5px;
+    border-radius: 5px;
+    border:solid 1px white;
+}
+
+.registroAjustes{
+    margin-bottom: 10px;
+    
+}
+.fechaNaci input{
+    width: 70%;
+    border-radius: 5px;
+    border:solid 1px white;
+    margin-left: 10px;
+}
+
+
+.perfilUsuario{
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.cateIntere{
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.fotoRegister{
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.claveRegister{
+    margin-bottom: 5pxpx;
+    margin-top: 30px;
+}
+
+.claveRegister input{
+    width: 70%;
+    padding: 5px;
+    border-radius: 5px;
+    border:solid 1px white;
+}
+
+.cajaConfirmar{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 20px;
+    
+  
+}
+
+.confirRmaregister input{
+  border-radius: 10px;
+  line-height: 5px;
+  width: 150px;
+  background-color: blue;
+  border:solid 1px blue;
+  color: white;
+ 
+}
+
+
+
+/* ACA VA EL MAIN DEL LOGIN, FORMULARIOS*/
+
+.registroControl{
+   text-align: center;
+}
+
+.usuarioregis input{
+    margin-bottom: 60px;
+    margin-top: 30px;
+    width: 70%;
+    height: 30px;
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 16px;   
+}
+
+.buttonLogin button{
+    width: 70%;
+    height: 30px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    background-color: blue;
+    font-size: 16px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .caja2{
     margin: auto;
     width: 55%; 
     border: 15px;
-    box-sizing: border-box;
-
-
+    padding: 10px;
     
 }
 
 .deliveryIMG{
     color: green;
-    text-align: left;
-    margin-left: 20px;
+    text-align: right;
+    margin-left: 20px;   
+}
+.deliveryIMG i{
+    font-size: 20px;
+    padding: 10px;
+    position: relative;
+    bottom: 20px;
 }
 
 .cajaDescripcion{
     width: 100%;
     background-color: white;
-    border: 1 px solid #ebebeb;
     
-     margin: auto;
-    box-sizing: border-box;
+    margin: auto;
+   
 }
 
 footer{
-   display: flex;
-   flex-wrap: nowrap;
+ 
     margin: auto;
-    width: 90vw;
     text-align: center;
-}
-
-@media (min-width:361px){
-
-}
-
-@media (min-width: 769) {
     
 }
 
+.flex1{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.centrado-footer{
+    margin: 15px 20px;
+    
+    
+}
+
+
+@media (min-width: 760px) {
+    .topHeader{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .centrado{
+        max-width: 350px;
+        text-align: right;
+    }
+    .cajaBurger{
+        display: none;
+
+    }
+    .navBar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navBar ul{
+        display: flex;
+    }
+    .navBar li{
+        margin: 0 3px;
+    }
+    .navBar i{
+        font-size: 15px;
+    }
+    .articulosUltima{
+        display: flex;;
+    }
+    h4{
+        font-size: 14px;
+    }
+
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .centrado-footer{
+        margin: auto;
+        padding: 30px;
+        display: flex;
+        display: inline-block;
+}
+h5{
+
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    
+}
+}
+
+
+@media (min-width: 1200px) {
+    .topHeader{
+        max-width: 1200px ;
+        margin: auto;
+    }
+    .navBar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .navBar li{
+        margin: 0 10px;
+        padding-top: 15px;
+    }
+    .caja1{
+        width: 350px;
+        background-color: white;
+        margin: 20px;
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    .articulosUltima{
+        max-width: 1200xp;
+    }
+
+    .footer{
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .centrado-footer{
+        
+        text-align: center;
+        font-size: 14px;
+         
+    }
+
+    .centrado-footer h3{
+        line-height: 50px;
+    }
+
+    .centrado-footer p{
+        line-height: 20px;
+         
+    }
+
+    h5{
+        display: block;
+        font-size: 20px;
+    }
+
+    .enAzul i{
+      font-size: 40px;
+      margin-bottom: 20px;
+  }
+
+
+}
