@@ -75,6 +75,10 @@ h4{
     color:blue;
 }
 
+.enAzul i:hover{
+    color:#0022AA;
+}
+
 i{
     font-size: 25px;
     line-height: 10px;
@@ -233,6 +237,9 @@ i{
     border:none; 
 }
 
+.buttonLogin button:hover{
+    background-color: #0022AA;
+}
 
 
 
@@ -240,22 +247,30 @@ i{
 
 
 
+.cajaIMG{
+    position: relative;
+    z-index: 10;
+}
 
 
+
+    
 
 
 .caja2{
   
     margin: auto;
+   margin-top: 10px;
+    position: relative;
     width: 55%; 
-    border: 15px;
-    padding: 10px;
+    box-shadow: 0px 0px 10px rgb(100,100,100);
    
     
 }
 
 .deliveryIMG{
     color: green;
+   
    
 }
 .deliveryIMG i{
@@ -270,8 +285,15 @@ i{
     position: absolute;
     right: 10px;
     top: -15px;
+    transition: all 1s;
       
 }
+
+.deliveryIMG i:hover{
+    transform: rotate(-90deg);
+}
+
+
 
 .cajaDescripcion{
    display: flex;
@@ -280,14 +302,34 @@ i{
     width: 100%;
     background-color: white;
     margin: auto;
-    position: relative;
+    position: absolute;
+    top:290px;
    
 }
+
+
+.cajaDescripcion:hover{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+     width: 100%;
+     background-color: white;
+     margin: auto;
+     position: relative;
+     top:0;
+     z-index: 11;
+     box-shadow: 0px 0px 10px rgb(63, 62, 62)
+     
+    
+ }
+
+
 
 footer{
  
     margin: auto;
     text-align: center;
+ 
     
 }
 
@@ -356,6 +398,48 @@ h5{
     padding: 20px;
     
 }
+
+
+.caja2{
+
+    margin: 10px;
+}
+
+.formularioRegistro{
+    margin: auto;
+   
+    width: 90%;
+    border: solid 1px rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+   
+}
+
+
+.registroAjustes input{
+    width: 50%;
+}
+
+.fechaNaci input{
+    width: 50%;
+}
+
+.claveRegister input{
+    width: 50%;
+}
+
+.selectores {
+    margin: auto;
+}
+
+.usuarioregis input{
+    width: 50%;
+}
+
+.buttonLogin button{
+    width: 50%;
+}
+
+
 }
 
 
