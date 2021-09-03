@@ -247,10 +247,6 @@ i{
 
 
 
-.cajaIMG{
-    position: relative;
-    z-index: 10;
-}
 
 
 
@@ -285,13 +281,10 @@ i{
     position: absolute;
     right: 10px;
     top: -15px;
-    transition: all 1s;
+    
       
 }
 
-.deliveryIMG i:hover{
-    transform: rotate(-90deg);
-}
 
 
 
@@ -302,26 +295,13 @@ i{
     width: 100%;
     background-color: white;
     margin: auto;
-    position: absolute;
-    top:290px;
+    position: relative;
+  
    
 }
 
 
-.cajaDescripcion:hover{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-     width: 100%;
-     background-color: white;
-     margin: auto;
-     position: relative;
-     top:0;
-     z-index: 11;
-     box-shadow: 0px 0px 10px rgb(63, 62, 62)
-     
-    
- }
+
 
 
 
@@ -500,5 +480,61 @@ h5{
       margin-bottom: 20px;
   }
 
+
+  .cajaIMG{
+    position: relative;
+    z-index: 10;
+}
+
+
+.deliveryIMG i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border:solid 1px #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: -15px;
+    transition: all 1s;
+      
+}
+
+.deliveryIMG i:hover{
+    transform: rotate(-90deg);
+}
+
+
+
+.cajaDescripcion{
+   display: flex;
+   flex-wrap: nowrap;
+   flex-direction: column;
+    width: 100%;
+    background-color: white;
+    margin: auto;
+    position: absolute;
+    top:290px;
+   
+}
+
+
+.cajaDescripcion:hover{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+     width: 100%;
+     background-color: white;
+     margin: auto;
+     position: relative;
+     top:0;
+     z-index: 11;
+     box-shadow: 0px 0px 10px rgb(63, 62, 62)
+     
+    
+ }
 
 }
