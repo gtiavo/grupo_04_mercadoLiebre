@@ -3,7 +3,10 @@ const app = express();
 const path = require("path");
 const rutasindex=require('./routes/rutasIndex.js');
 const rutasLogin=require('./routes/rutasLogin.js');
-const rutasRegister=require('./routes/rutasRegister.js')
+const rutasRegister=require('./routes/rutasRegister.js');
+
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views')
 
 
 
